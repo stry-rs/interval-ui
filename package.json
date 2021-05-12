@@ -1,0 +1,34 @@
+{
+  "name": "interval-ui",
+  "version": "1.0.0",
+  "description": "TailwindCSS Ui kit for stry-rs projects",
+  "author": "",
+  "license": "MIT",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/ts/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@tsconfig/svelte": "^1.0.2",
+    "rollup": "^2.21.0",
+    "rollup-plugin-execute": "^1.1.1",
+    "rollup-plugin-filesize": "^9.0.2",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.24.0",
+    "svelte-preprocess": "^4.0.7",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.6"
+  }
+}
